@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-weight: 600px  ;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+ background-color: 	whitesmoke;
+}
+nav {
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #006039;
+    height: 50px;
+   
+    
+    p {
+        margin-right: auto;
+        margin-left: 30px;
+        color: #f1b533;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    ul {
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        
+        }
+        
+    }   
+    li {
+        display: inline;
+        padding: 20px;
+    }
+}
+
+main {
+    img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    display: grid;
+    gap: 70px ;
+    margin-top: 10vh;
+    justify-content: center;
+    grid-template-columns: auto auto auto ;
+    
+    section {
+       
+        border: 3px solid black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        height: 400px;
+        width: 250px;
+  
+        transition: 0.4s;
+
+        button {
+            margin-top: auto
+        }
+    }
+
+    section:hover {
+        border: 3.5px solid #f1b533;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        height: 400px;
+        width: 250px;
+  
+        transition: 0.4s;
+
+        button {
+            margin-top: auto
+        }
+    }
+
+    
+
+}
+button {
+    border: none;
+    background-color: #006039 ;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+@keyframes animacija {
+    from {width: 2000px; height: 2000px;}
+    to {width: 0px; height: 0px;}
+}
+
+.animation {
+    position:absolute;
+    background-color:#006039;
+    animation-name: animacija;
+    animation-duration: 2.5s;
+}
+
